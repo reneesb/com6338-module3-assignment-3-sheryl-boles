@@ -36,7 +36,8 @@ function runQuiz(questionsArr) {
         let userScore= 0;
 
     if (userResponse === questionObj.answer) {
-        alert("Correct!") && userScore++
+        alert("Correct!") 
+        userScore += 1
     } else {
         alert("Sorry, that is not correct")
     }
@@ -48,8 +49,9 @@ function runQuiz(questionsArr) {
     
         alert(scorePercentage);
     }
-    showScore(scorePercentage);
+   
 }
 
 
 runQuiz(questionsArr);
+ showScore(scorePercentage);
